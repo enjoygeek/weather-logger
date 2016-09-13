@@ -4,8 +4,8 @@ var rest = require("./rest_client");
 // First you need to create a connection to the db
 var con = mysql.createConnection({
   host: "localhost",
-  user: "root",
-  password: "",
+  user: "cadmin",
+  password: "cadmin",
   database: "camaras"
 });
 
@@ -90,6 +90,9 @@ setInterval(function () {
   console.log(delay + "ms have passed since I was scheduled");
 },  60 * 60 * 1000); //Cada 60 minutos
 
+someAsyncOperation(function(){
+	console.log("Logger initiated");
+})
 
 process.on('SIGINT', function() {
   disconnect();
