@@ -1,3 +1,10 @@
+// Tutorials followed
+// Module Concept http://stackoverflow.com/questions/11726525/nodejs-require-file-js-issues
+// Database https://www.sitepoint.com/using-node-mysql-javascript-client/
+// Rest Client http://stackoverflow.com/questions/9577611/http-get-request-in-node-js-express
+//
+
+
 var mysql = require("mysql");
 var rest = require("./rest_client");
 
